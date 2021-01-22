@@ -84,33 +84,75 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Author's custom styles-Yoga love retreat
    ========================================================================== */
+   .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+}
+
+ h1 {
+  font-family: 'Quicksand', sans-serif;
+}
 /*-----------------Base Header - Footer Style------------------*/
-header, footer {
+header footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+header {
+  padding: 15px 0;
 }
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row wrap; 
+  margin: 0;
 }
-header nav {
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
+header nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-}
-header ul li {
-  display: flex;
-  justify-content: space-around;
+  width: 60%;
 }
 
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+footer .content-wrapper{
+  width: 50%;
+  margin: 50px 0;
+}
+
+footer .contact {
+ margin-bottom: 50px;
+}
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -122,7 +164,9 @@ footer .social-icons p{
   justify-content: center;
   align-items: center;
 }
-
+footer .copyright {
+  margin: 20px 0;
+}
 /*-----------------Mobile-Style------------------*/
 
 /* Hero Area */
@@ -145,11 +189,40 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
 }
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+.features p {
+  margin: 0;
+}
+
 .feature .feature-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+/* Reviews */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h4 {
+  width: 55%;
+  margin: 20px 0;
 }
 
 /* ==========================================================================
