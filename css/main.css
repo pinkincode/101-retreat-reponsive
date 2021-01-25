@@ -86,36 +86,119 @@ textarea {
 /* ==========================================================================
    Author's custom styles-Yoga love retreat
    ========================================================================== */
-   .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-  }
-
+html {
+  font-size: 16px;
+}
 body {
   font-family: 'Open Sans', sans-serif;
-  font-style: normal;
+  color:#f9dfd2; 
+  font-weight: 400;
+  background-color: #331a21;
+}
+body h2{
+  font-weight: 500;
+  font-size: 2em;
 }
 
- h1 {
-  font-family: 'Quicksand', sans-serif;
+body p{
+  line-height: 1.5em;
 }
+ .header-divider {
+  border-bottom: .2em solid #d37979;
+}
+/*Homepage*/
+header ul {
+  list-style: none;
+  text-transform: uppercase; 
+ 
+}
+nav a {
+  color:#d37979;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1em;
+}
+/*homepage*/
+.hero-area h1 {
+  font-family: 'Quicksand', sans-serif;
+  color: #a02473;
+  font-size: 2.5em; 
+}
+.reviews{
+  background-color: #edc7c3;
+  color: #331a21;
+}
+/*about*/
+.mission, .contact-section,.map, .instagram-image {
+  background-color: #edc7c3;
+  color: #331a21;
+}
+.mission h2{
+  font-size:1.75em;
+}
+
+.mission h4{
+  color:#d37979;
+  font-weight: 700;
+}
+
+.contact-section h2 {
+  font-size:1.5em
+} 
+.contact-section h4 {
+  color:#d37979;
+  font-weight: 700;
+  font-style: normal;
+}
+.instagram-image h4 a{
+  color:#d37979;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/*faq*/
+.faq {
+  background-color: #edc7c3;
+  color: #331a21;
+}
+
+.faq h2{
+  font-size:2em
+}
+.faq h4 {
+  color:#d37979;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+/* ==========================================================================
+   Author's custom layout-Yoga love retreat
+   ========================================================================== */
 /*-----------------Base Header - Footer Style------------------*/
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-header {
-  padding: 40px 0;
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin:  0;
 }
+
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; 
-  margin: 0;
+  margin: 40px 0 40px 0 ;
 }
 
 .header-divider {
@@ -128,7 +211,7 @@ header nav{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+  width: 80%;
 }
 
 
@@ -140,6 +223,7 @@ header nav ul {
 
 footer {
   flex-direction: column;
+  margin: 0 0 30px 0;
 }
 
 footer p {
@@ -247,6 +331,7 @@ input[type=text] {
    About Page
    ========================================================================== */
  /* Misson */
+ 
 .mission {
   display: flex;
   justify-content: center;
@@ -255,6 +340,12 @@ input[type=text] {
 }
   /* Contact */
 .contact-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
+.map{
   display: flex;
   justify-content: center;
   align-content: center;
@@ -299,8 +390,9 @@ justify-content: space-around;
     flex-flow: row wrap;
   }
   
-  .faq h1 {
+  .faq h2 {
     margin: 20px;
+    
   }
   
   .faq-content {
@@ -403,8 +495,11 @@ justify-content: space-around;
     header .content-wrapper {
       display: flex;
       justify-content: space-between;
-      flex-flow: row;
-      
+      flex-flow: row;  
+    }
+
+    .header-divider {
+      border-style: none;
     }
    /*======Aside======*/  
    aside .content-wrapper{
@@ -499,7 +594,7 @@ width: 45%;
    .faq-content{
      flex-basis: 45%;
    }
-   .faq h1 {
+   .faq h2 {
      width: 90%;
    }
 }
@@ -513,7 +608,12 @@ width: 45%;
   .content-wrapper {
     max-width: 960px;
   }
+  header {
+    width:100%;
+  }
   /*****=Features=*****/  
+
+  
   .features article {
     flex-basis: 30%;
   }
@@ -535,8 +635,6 @@ width: 45%;
   .mission-content .content-wrapper {
     width: 90%;
     }
-
-
  .contact-content {
   display: flex;
   justify-content: space-between;
@@ -547,9 +645,13 @@ width: 45%;
   ========================================================================== */
   .faq .content-wrapper{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
    }
-
+  
+   .faq h2 {
+    width:72%;
+   
+    
 }
 /* ==========================================================================
    Print styles.
