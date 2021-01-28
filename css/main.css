@@ -111,6 +111,7 @@ body p{
 header h1{
   display: inherit;
   max-width: 60%;
+   background-color: #331a21;
 }
 img{
   width: 100%;
@@ -419,16 +420,15 @@ input[type=button] {
   align-content: center;
   flex-flow: row wrap;
 }
-.map{
+.map {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-flow: row wrap;
+  
+ 
 }
 .map figure{
   width:100%;
   height: 0;
-  padding-bottom: 100%;
+  padding-bottom: 50%;
   overflow: hidden;
   position: relative;
 }
@@ -686,6 +686,10 @@ width: 45%;
   justify-content: space-around;
   align-items: center;
  }
+ .map figure{
+ padding-bottom: 40%;
+ }
+ 
   /*======Instagram======*/  
  
   
@@ -772,7 +776,10 @@ width: 45%;
   justify-content: space-between;
   align-items: flex-start;
 }
-
+.map figure{
+  padding-bottom: 30%;
+ 
+ }
  /* ==========================================================================
   FAQ Page
   
