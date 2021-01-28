@@ -107,6 +107,21 @@ body p{
   border-bottom: .2em solid #d37979;
 }
 /*Homepage*/
+
+header h1{
+  display: inherit;
+  max-width: 60%;
+}
+img{
+  width: 100%;
+}
+header figure {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 header ul {
   list-style: none;
   text-transform: uppercase; 
@@ -119,11 +134,13 @@ nav a {
   font-size: 1em;
 }
 /*homepage*/
+
 .hero-area h1 {
   font-family: 'Quicksand', sans-serif;
   color: #a02473;
   font-size: 2.5em; 
 }
+
 .reviews{
   background-color: #edc7c3;
   color: #331a21;
@@ -208,17 +225,18 @@ header .content-wrapper {
 }
 header nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 80%;
+  width: 100%;
 }
 
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  align-items: center;
+  width: 80%;
 }
 
 footer {
@@ -262,6 +280,15 @@ footer .copyright {
   justify-content: center;
   flex-flow: row wrap;
 }
+.hero-area {
+  background-image: url(../img/prayer-mudra-beach.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  
+  justify-content: center;
+  flex-flow: row wrap;
+}
 /* Aside */
 aside {
   display: flex;
@@ -273,16 +300,44 @@ aside input {
  margin: 10px;
   padding:10px;
 }
- input[type=button] {
-  width:250px;
-  
-}
 
 input[type=text] {
-  width: 225px;
- 
+  width: 230px;
+  background-color: #f9dfd2;
+  color: #989595;
+  border-style: none;
+  text-align: justify;
+  text-transform: lowercase;
 }
+
+input[type=button] {
+  width:250px;
+  background-color: #a02473;
+  border-style: none;
+  color: #f9dfd2;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /* Features */
+.features {
+  background-image: url(../img/beach-path.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  height: auto;
+}
+.transbox {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #331a21; 
+  opacity: 0.7;
+  width: 100%;
+}
+
 
 .features {
   display: flex;
@@ -293,11 +348,13 @@ input[type=text] {
 
 .features h2 {
   margin-bottom: 60px;
+  
 }
 
 .features article {
   width: 60%;
   margin: 30px 0;
+  
 }
 .features p {
   margin: 0;
@@ -310,7 +367,15 @@ input[type=text] {
   flex-flow: row wrap;
 }
 /* Reviews */
-
+.reviews img{
+  height: auto;
+}
+.reviews figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+}
 .reviews {
   display: flex;
   justify-content: center;
@@ -331,7 +396,15 @@ input[type=text] {
    About Page
    ========================================================================== */
  /* Misson */
- 
+ .mission img{
+  height: auto;
+ }
+ .mission figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+}
 .mission {
   display: flex;
   justify-content: center;
@@ -354,23 +427,29 @@ input[type=text] {
  /* Instagram */
 .instagram-image {
   display: flex;
-  flex-flow: column wrap;
-  margin-bottom: 40px;
+ justify-content: center;
   align-items: center;
 }
 
-.instagram-image .content-wrapper h4{
-display: flex;
-align-content: center;
-justify-content: space-around;
+.instagram-image .content-wrapper {
+  width: 60%; 
 }
 
-.image-content{
+.instagram-image .content-wrapper a{
+  color: #d37979;
+  text-transform: uppercase;
+  text-decoration: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  
+ align-content: center;
+ justify-content: center;
 }
+
+.instagram-image img {
+ padding: 10px 0 10px 0;
+}
+  
+
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -486,16 +565,30 @@ justify-content: space-around;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px ) {
 /* tablet */
+
 /* ==========================================================================
    homepage
    ========================================================================== */
     /*======header======*/  
+    header figure {
+      width: 80%;
+      margin: auto; 
+    }
+
     header .content-wrapper {
       display: flex;
       justify-content: space-between;
       flex-flow: row;  
+    }
+    .hero-area {
+      background-image: url(../img/prayer-mudra-beach.jpg);
+      min-height: 700px;
+    }
+    .hero-area h1 {
+     width: 60%;
+      font-size: 2.5em; 
     }
 
     .header-divider {
@@ -519,22 +612,27 @@ justify-content: space-around;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap ; 
+    flex-flow: row wrap ; 
     flex-basis: 45%;
+    height: 200px;
   }
   .features .features-item-decription{
     width: 50%; 
   }
    /*======Reviews======*/  
+   .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .reviews h2{
     width: 90%;
   }
-  .reviews article {
-    display: flex;
-    width:40%;
-    justify-content:space-between; 
+  .reviews article figure,
+  .reviews article div {
+    width: 50%;
+  
   }
-
  /*======footer======*/ 
 
   footer .content-wrapper{
@@ -568,24 +666,38 @@ justify-content: space-around;
 width: 45%;
 }
  /*======Contact======*/  
-.contact-content {
- display: flex;
- justify-content: space-around;
- align-items: center;
-}
- /*======Instagram======*/  
-  .image-content{
+ .contact-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+  /*======Instagram======*/  
+ 
+  
+  .image-content {
+   
     display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-}
-
-
-
+    align-items: center;  
+    justify-content: space-evenly;
+    
+  }
+  .image-content figure{
+  width:100%;
+  
+  }
+  
+ 
+  
+  .image-content img {
+    width:100%;
+  
+  }
+    
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
-  /*======Faq======*/   
+  /*======Faq======*/  
+ 
    .faq .content-wrapper{
     display: flex;
     justify-content:space-between;
@@ -595,13 +707,13 @@ width: 45%;
      flex-basis: 45%;
    }
    .faq h2 {
-     width: 90%;
-   }
+    padding-top: 20px;
+    width:58%;   
+}
 }
 
 @media only screen and (min-width: 1200px){
   /* desktop */
-
   /* ==========================================================================
   Homepage
   ========================================================================== */
@@ -612,14 +724,23 @@ width: 45%;
     width:100%;
   }
   /*****=Features=*****/  
+  .hero-area {
+    background-image: url(../img/prayer-mudra-beach.jpg);
+    min-height: 900px;
+  }
 
-  
+  .hero-area h1 {
+    font-size: 3em;  
+  }
   .features article {
-    flex-basis: 30%;
+    flex-basis: 40%;
+    height: 250px;
+    
   }
   .features .features-item-decription{
-    width: 60%; 
+    width: 50%; 
   }
+  
 
    /*****=footer=*****/ 
   footer .social-icons{
@@ -640,19 +761,20 @@ width: 45%;
   justify-content: space-between;
   align-items: flex-start;
 }
+
  /* ==========================================================================
   FAQ Page
+  
   ========================================================================== */
   .faq .content-wrapper{
     display: flex;
     justify-content:space-between;
    }
   
-   .faq h2 {
-    width:72%;
-   
-    
+ .faq-content{
+  flex-basis: 40%;   
 }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
