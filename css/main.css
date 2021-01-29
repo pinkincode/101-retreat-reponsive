@@ -258,16 +258,23 @@ footer .contact {
   margin-bottom: 50px;
 }
 
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+footer .social-icons i a {
+  font-size: 2em; 
+  color: #d37979; 
+ 
+}
+footer .social-icons a{
+  text-decoration: none; 
+  font-size: 2em; 
+  color: #d37979; 
 }
 
-footer .social-icons p {
+footer .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  width: 80%;
 }
 
 footer .copyright {
@@ -634,6 +641,7 @@ input[type=button] {
   .features .features-item-decription{
     width: 50%; 
   }
+  
    /*======Reviews======*/  
    .reviews article {
     display: flex;
@@ -664,8 +672,7 @@ input[type=button] {
   footer .social {
   width: 45%;
   }
-  
-
+ 
 /* ==========================================================================
    About Page
    ========================================================================== */
