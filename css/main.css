@@ -100,8 +100,15 @@ body h2{
   font-size: 2em;
 }
 
+body h3{
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+
 body p{
-  line-height: 1.5em;
+  font-size:1em;
+  line-height: 1.6em;
 }
  .header-divider {
   border-bottom: .2em solid #d37979;
@@ -343,7 +350,7 @@ input[type=button] {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #331a21; 
-  opacity: 0.7;
+  opacity: 0.8;
   width: 100%;
 }
 
@@ -360,13 +367,21 @@ input[type=button] {
   
 }
 
-.features article {
-  width: 60%;
-  margin: 30px 0;
-  
-}
-.features p {
+
+.features .features-item-decription {
+ text-align: center;
   margin: 0;
+}
+.features .icon{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+   
+}
+
+.features-items img{
+  width: 20%;
+  height: auto; 
 }
 
 .features .features-items{
@@ -429,11 +444,14 @@ input[type=button] {
 }
 .map {
   display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
   
- 
 }
+
 .map figure{
-  width:100%;
+  width:60%;
   height: 0;
   padding-bottom: 50%;
   overflow: hidden;
@@ -462,12 +480,15 @@ input[type=button] {
   text-transform: uppercase;
   text-decoration: none;
   display: flex;
- align-content: center;
- justify-content: center;
+  align-content: center;
+  justify-content: center;
+  font-weight: 700;
 }
 
 .instagram-image img {
  padding: 10px 0 10px 0;
+ width: 100%;
+ height:100%;
 }
   
 
@@ -480,7 +501,13 @@ input[type=button] {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row wrap;  
+  }
+
+   .faq .faq-title {
+     justify-content: start;
+      align-items: center; 
+      
   }
   
   .faq .content-wrapper {
@@ -491,13 +518,11 @@ input[type=button] {
     flex-flow: row wrap;
   }
   
-  .faq h2 {
-    margin: 20px;
-    
-  }
-  
   .faq-content {
-    margin-bottom: 50px;
+    margin-bottom: 65px;
+  }
+  .faq-content p {
+   
   }
 /* ==========================================================================
    Helper classes
@@ -604,13 +629,17 @@ input[type=button] {
       justify-content: space-between;
       flex-flow: row;  
     }
+    nav a {  
+      font-size: 1.3em;
+    }
     .hero-area {
       height: 800px;
      
     }
     .hero-area h1 {
-     width: 60%;
-      font-size: 2.5em; 
+     width: 50%;
+      font-size: 3em; 
+     
     }
 
     .header-divider {
@@ -621,27 +650,46 @@ input[type=button] {
     display: flex;
     justify-content:space-between; 
     flex-direction: row wrap;
+    padding: 30px;
    }
-    .form-description {
+    .form-description .form{
     width: 40%;
    }
 
-  .form {
-    width: 40%;
+  aside p {
+    font-size: 1.2em;
+    width: 60%;
    }
    /*======Features======*/  
+
   .features article {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap ; 
+    flex-flow: column wrap;
     flex-basis: 45%;
-    height: 200px;
   }
-  .features .features-item-decription{
-    width: 50%; 
+
+  .features h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  
+  .features .features-items {
+    justify-content: space-between;
+    width: 90%;
   }
   
+  .features-items img{
+    width: 80%;  
+  }
+
+  .features .features-item-decription {
+    font-size: 1.3em;
+   width: 80%;
+   line-height: 1.8em;
+   }
    /*======Reviews======*/  
    .reviews article {
     display: flex;
@@ -654,6 +702,9 @@ input[type=button] {
   .reviews article figure,
   .reviews article div {
     width: 50%;
+    width: 80%;
+    font-size: 1.2em;
+    line-height: 1.5em;
   
   }
  /*======footer======*/ 
@@ -672,7 +723,11 @@ input[type=button] {
   footer .social {
   width: 45%;
   }
- 
+
+  footer h4{
+    padding-bottom: 10%;
+  }
+
 /* ==========================================================================
    About Page
    ========================================================================== */
@@ -683,10 +738,30 @@ input[type=button] {
   justify-content:space-between;
   align-items: center; 
 }
+.mission h2{
+  margin-bottom: 60px;
+  font-size: 2.2em;
+}
+.mission figure{
+  width: 80%;
+}
+.mission h4 {
+  font-size: 1.3em;
+}
+.contact-section h4 {
+  font-size: 1.3em;
+}
+
+.contact-section p{
+  font-size: 1.2em;
+}
 
 .mission-content p {
 width: 45%;
+font-size: 1.3em;
+line-height: 1.8em;
 }
+
  /*======Contact======*/  
  .contact-content {
   display: flex;
@@ -711,10 +786,7 @@ width: 45%;
   
   }
 
-  .image-content img {
-    width:100%;
-  }
-    
+ 
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -729,9 +801,18 @@ width: 45%;
      flex-basis: 45%;
    }
    .faq h2 {
-    padding-top: 20px;
-    width:58%;   
-}
+    padding-top: 20px; 
+  } 
+  .faq h4 {
+    font-size: 1.2em;
+  }
+ 
+  .faq p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+ 
+
 }
 
 @media only screen and (min-width: 1200px){
@@ -745,25 +826,28 @@ width: 45%;
   header {
     width:100%;
   }
+  
   /*****=Features=*****/  
   .hero-area {
-    height: 900px;
-    
+
+    height: 900px; 
+  }
+ 
+   
+  .hero-area h1 {
+    font-size: 3.33em;   
+  }
+  .features h2 {
+    width: 90%;
   }
 
-  .hero-area h1 {
-    font-size: 3em;  
-  }
   .features article {
     flex-basis: 40%;
-    height: 250px;
+   height: 300px;
     
   }
-  .features .features-item-decription{
-    width: 50%; 
-  }
   
-
+  
    /*****=footer=*****/ 
   footer .social-icons{
     width: 60%;
@@ -776,30 +860,30 @@ width: 45%;
   ========================================================================== */
   /*****=Mission=*****/ 
   .mission-content .content-wrapper {
-    width: 90%;
+    width: 100%;
     }
  .contact-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .map figure{
   padding-bottom: 30%;
- 
+  
  }
+
  /* ==========================================================================
   FAQ Page
   
   ========================================================================== */
   .faq .content-wrapper{
-    display: flex;
-    justify-content:space-between;
-   }
+    
+   
   
- .faq-content{
-  flex-basis: 40%;   
-}
 
+
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
