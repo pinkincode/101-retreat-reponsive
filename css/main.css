@@ -502,11 +502,13 @@ input[type=button] {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;  
+    
   }
 
    .faq .faq-title {
      justify-content: start;
       align-items: center; 
+      margin-left: 25px;
       
   }
   
@@ -516,14 +518,14 @@ input[type=button] {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin-left: 20px;
+   
   }
   
   .faq-content {
     margin-bottom: 65px;
   }
-  .faq-content p {
-   
-  }
+ 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
