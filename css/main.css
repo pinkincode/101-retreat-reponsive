@@ -123,7 +123,13 @@ body p{
   border-bottom: .2em solid #d37979;
   
 }
-/*Homepage*/
+/*Header*/
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 img{
   width: 100%;
@@ -136,7 +142,14 @@ header figure {
   flex-flow: row wrap;
 }
 
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 
+}
 header ul {
   list-style: none;
   text-transform: uppercase; 
@@ -243,7 +256,7 @@ header .content-wrapper {
 header nav{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   flex-flow: row wrap;
   
 }
